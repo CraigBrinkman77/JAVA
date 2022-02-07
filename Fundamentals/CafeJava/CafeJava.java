@@ -9,8 +9,8 @@ public class CafeJava {
         
         // Menu variables (add yours below)
         double mochaPrice = 3.5;
-        double coffeePrice = 4.0;
-        double lattePrice = 5.2;
+        double coffeePrice = 4.5;
+        double lattePrice = 15.2;
         double cappuccinoPrice = 4.7;
     
         // Customer name variables (add yours below)
@@ -51,6 +51,5 @@ public class CafeJava {
         }
         double price = (lattePrice-coffeePrice);
         System.out.println(displayTotalMessage + price); 
-
     }
 }
