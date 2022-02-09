@@ -1,7 +1,7 @@
 package ZooKeeper;
 
 public class Mammal {
-	private int energyLevel;
+	protected int energyLevel;
 
 	public Mammal() {
 		this.energyLevel = 100;
