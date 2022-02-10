@@ -9,8 +9,8 @@ class BankAccount{
     private static double totalBankMoney = 0.0;
 
     public BankAccount(){
-        this.accountNumber = setAccountNumber();
-        addToNumberOfAccounts();
+        this.accountNumber = this.setAccountNumber();
+        this.addToNumberOfAccounts();
     }
 
     // Deposits
@@ -22,7 +22,7 @@ class BankAccount{
         this.checkingBalance += depositAmmount;
         this.totalBankMoney += depositAmmount;
         }else if(accountType.toLowerCase() == "savings"){
-        this.savingsBalance += depositAmmount;
+        this.setSavingingsBalance(this.getSavingsBalance() + depositAmmount);
         this.totalBankMoney += depositAmmount;
         }
     }
@@ -47,7 +47,7 @@ class BankAccount{
 
         return randomNumber;
     }
-    public void addToNumberOfAccounts(){
+    public static void addToNumberOfAccounts(){
         numberOfAccounts ++;
     }
     // get Checking
