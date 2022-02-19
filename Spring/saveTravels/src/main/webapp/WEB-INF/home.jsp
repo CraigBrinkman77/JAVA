@@ -30,8 +30,7 @@
 		<tbody>
 			<c:forEach items="${ expenses}" var="exp">
 				<tr>
-					<td><a href="/expenses/${exp.id}"><c:out
-								value="${exp.getExpenseName() }" /></a></td>
+					<td><a href="/expenses/${exp.id}"><c:out value="${exp.getExpenseName() }" /></a></td>
 					<td><c:out value="${exp.getVendor() }" /></td>
 					<td><c:out value="${exp.getAmount()}" /></td>
 					<%-- ${String.format('%.2f', exp.amount } --%>

@@ -33,7 +33,7 @@ public class ExpenseController {
 	
 	// View All Expenses
 	@GetMapping("/expenses")
-	public String index(Model model, @ModelAttribute("expense") Expense expense) {
+	public String index(@ModelAttribute("expense") Expense expense, Model model) {
 		List<Expense> expenses = expenseService.allExpenses();
 		model.addAttribute("expenses", expenses);
 		return "home.jsp";
