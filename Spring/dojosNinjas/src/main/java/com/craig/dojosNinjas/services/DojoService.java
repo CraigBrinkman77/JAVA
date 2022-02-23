@@ -12,7 +12,7 @@ import com.craig.dojosNinjas.repositories.DojoRepository;
 @Service
 public class DojoService {
 	@Autowired
-	DojoRepository dojoRepository;
+	private DojoRepository dojoRepository;
 
 	// retrieves all the dojos
 	public List<Dojo> allDojos() {
